@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monsoon Mission Project - Kiran D. Salunke</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-blue-900 text-white p-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Kiran D. Salunke</h1>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
+        <li><a href="index.html" class="hover:text-blue-300">Home/CV</a></li>
+        <li><a href="monsoon-mission.html" class="hover:text-blue-300">Monsoon Mission</a></li>
+        <li><a href="deep-learning-enso.html" class="hover:text-blue-300">ENSO Prediction</a></li>
+        <li><a href="deep-learning-ismr.html" class="hover:text-blue-300">ISMR Prediction</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Content -->
+  <div class="container mx-auto p-6 max-w-4xl bg-white shadow-lg rounded-lg mt-6">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Monsoon Mission Project: ISMR Prediction with CFSv2</h1>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Overview</h2>
+      <p class="text-gray-700">
+        This project focused on developing a dynamical system for seasonal prediction of Indian Summer Monsoon Rainfall (ISMR) using the NCEP Climate Forecast System version 2 (CFSv2). The work explored the potential predictability of ISMR by analyzing the impacts of sea surface temperature (SST) and soil moisture, leveraging advanced statistical techniques.
+      </p>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Technologies Used</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Fortran 90, Python, Matlab</li>
+        <li>CFSv2, NCO, CDO</li>
+        <li>Data: CMIP5, NCEP CFSR</li>
+      </ul>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Methodology</h2>
+      <p class="text-gray-700">
+        Utilized CFSv2 retrospective forecasts at five lead times to assess ISMR predictability. Applied ANOVA, relative entropy, and mutual information to quantify the sensitivity of ISMR to initial conditions. Analyzed SST and soil moisture impacts on monsoon variability, focusing on teleconnections with ENSO and IOD.
+      </p>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Results</h2>
+      <p class="text-gray-700">
+        Improved ISMR prediction skill by 17% in phase and 20% in amplitude compared to CFSv1, as published in multiple journals. Reduced dry bias over Indian landmass by addressing SST biases in the tropical Indian Ocean.
+      </p>
+      <img src="ismr-forecast.png" alt="ISMR forecast plot" class="mt-2 w-full max-w-md">
+    </section>
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Links</h2>
+      <p class="text-gray-700">
+        <a href="https://github.com/kirands16/monsoon-mission" class="text-blue-600">GitHub Repository</a> |
+        <a href="https://doi.org/10.1002/2015MS000542" class="text-blue-600">Publication</a>
+      </p>
+    </section>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
